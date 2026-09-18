@@ -13,10 +13,12 @@
 ## セットアップ
 
 ```sh
-npm install
+npm install                      # 依存関係のインストール + ビルド（prepare で npm run build が走る）
 cp .env.example.json .env.json   # userName / userEmail を編集
 npm link                         # gsetup コマンドをグローバルに登録
 ```
+
+`dist/` が無い場合や、ビルドだけやり直したい場合は `npm run build` を実行する。
 
 `.env.json` はこのフォルダ（ツール本体）に置く。どのディレクトリで実行してもこの設定が使われる。
 
