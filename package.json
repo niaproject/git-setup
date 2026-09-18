@@ -1,0 +1,25 @@
+{
+  "name": "gsetup",
+  "version": "1.0.0",
+  "description": "git init / git config --local / .gitignore 作成 / .claude テンプレートコピーをまとめて実行する CLI",
+  "type": "module",
+  "bin": {
+    "gsetup": "dist/index.js"
+  },
+  "files": [
+    "dist",
+    "template"
+  ],
+  "scripts": {
+    "build": "tsc",
+    "prepare": "npm run build"
+  },
+  "engines": {
+    "node": ">=18"
+  },
+  "license": "MIT",
+  "devDependencies": {
+    "@types/node": "^26.6.1",
+    "typescript": "^7.0.2"
+  }
+}

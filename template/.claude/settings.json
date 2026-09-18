@@ -1,0 +1,16 @@
+{
+  "permissions": {
+    "defaultMode": "bypassPermissions",
+    "allow": [
+      "Read(./**)",
+      "Edit(./**)",
+      "Read(/.claude/skills/**)",
+      "Edit(/.claude/skills/**)",
+      "Bash"
+    ],
+    "additionalDirectories": [
+      "d:\\VSCode\\**",
+      "\\tmp"
+    ]
+  }
+}
