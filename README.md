@@ -36,4 +36,13 @@ gsetup            # カレントディレクトリで実行
 gsetup path/to/dir  # 指定ディレクトリで実行（無ければ作成）
 ```
 
-`src/index.ts` を変更したら `npm run build` で再ビルドする。
+## 開発
+
+`src/index.ts` などのコードを修正したら、**必ず `npm run build` を実行する**こと。
+
+```sh
+npm run build   # src/*.ts -> dist/*.js にトランスパイル
+```
+
+`gsetup` コマンドが実行するのは `dist/index.js`（`package.json` の `bin` 参照）であり、`src/` の変更はビルドするまで反映されない。
+`npm link` 済みであれば、ビルドし直すだけで `gsetup` の挙動に反映される（再 link は不要）。
